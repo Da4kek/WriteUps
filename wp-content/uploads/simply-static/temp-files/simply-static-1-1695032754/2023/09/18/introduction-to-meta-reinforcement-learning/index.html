@@ -3,10 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>WriteUps</title>
+	<title>Introduction to Meta Reinforcement Learning &#8211; WriteUps</title>
 <meta name="robots" content="noindex, nofollow">
 <link rel="alternate" type="application/rss+xml" title="WriteUps &raquo; Feed" href="https://da4kek.github.io/writeups/feed/">
 <link rel="alternate" type="application/rss+xml" title="WriteUps &raquo; Comments Feed" href="https://da4kek.github.io/writeups/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="WriteUps &raquo; Introduction to Meta Reinforcement Learning Comments Feed" href="https://da4kek.github.io/writeups/2023/09/18/introduction-to-meta-reinforcement-learning/feed/">
 <script type="text/javascript">
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/da4kek.github.io\/writeups\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1"}};
 /*! This file is auto-generated */
@@ -109,17 +110,23 @@ img.emoji {
 <link rel="stylesheet" id="gutenverse-frontend-style-css" href="https://da4kek.github.io/writeups/wp-content/plugins/gutenverse/assets/css/frontend-block.css?ver=1.8.8" type="text/css" media="all">
 <link rel="stylesheet" id="gutenverse-frontend-icons-css" href="https://da4kek.github.io/writeups/wp-content/plugins/gutenverse/assets/css/frontend-icon.css?ver=1.8.8" type="text/css" media="all">
 <link rel="https://api.w.org/" href="https://da4kek.github.io/writeups/wp-json/">
+<link rel="alternate" type="application/json" href="https://da4kek.github.io/writeups/wp-json/wp/v2/posts/47">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://da4kek.github.io/writeups/xmlrpc.php?rsd">
 <meta name="generator" content="WordPress 6.3.1">
+<link rel="canonical" href="https://da4kek.github.io/writeups/2023/09/18/introduction-to-meta-reinforcement-learning/">
+<link rel="shortlink" href="https://da4kek.github.io/writeups/?p=47">
+<link rel="alternate" type="application/json+oembed" href="https://da4kek.github.io/writeups/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fda4kek.github.io%2Fwriteups%2F2023%2F09%2F18%2Fintroduction-to-meta-reinforcement-learning%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://da4kek.github.io/writeups/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fda4kek.github.io%2Fwriteups%2F2023%2F09%2F18%2Fintroduction-to-meta-reinforcement-learning%2F#038;format=xml">
 		<style id="gutenverse-global-css">:root { 
             --guten-screen-xs-max: 767px;
             --guten-screen-sm-min: 768px;
             --guten-screen-sm-max: 1024px;
             --guten-screen-md-min: 1025px; 
         }</style>
-		</head>
+		<link rel="pingback" href="https://da4kek.github.io/writeups/xmlrpc.php">
+</head>
 
-<body itemtype="https://schema.org/Blog" itemscope="itemscope" class="home blog wp-embed-responsive hide-mobile-top-bar martanda-scrollbar martanda-image-cursor ">
+<body itemtype="https://schema.org/Blog" itemscope="itemscope" class="post-template-default single single-post postid-47 single-format-standard wp-embed-responsive hide-mobile-top-bar martanda-scrollbar martanda-image-cursor ">
 	    <div class="martanda-body-padding-content">
     	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
     	<div class="martanda-top-bar-content">
@@ -129,7 +136,7 @@ img.emoji {
 <div class="wp-block-group site-header is-layout-constrained wp-block-group-is-layout-constrained" style="border-radius:0px;padding-top:0.6vw;padding-right:4vw;padding-bottom:0.3vw;padding-left:4vw">
 <div class="wp-block-group has-background is-layout-constrained wp-block-group-is-layout-constrained" style="border-radius:10px;background-color:#1c1c1c;padding-top:0.5vw;padding-right:2vw;padding-bottom:0.7vw;padding-left:2vw">
 <div class="wp-block-group alignwide align-stretch is-content-justification-space-between is-nowrap is-layout-flex wp-container-3 wp-block-group-is-layout-flex" style="margin-top:0px;margin-bottom:0px;padding-top:0px;padding-bottom:0">
-<h1 style="padding-top:0vw;padding-right:0vw;padding-left:0vw;padding-bottom:0vw;" class="has-link-color wp-block-site-title wp-elements-ac90ae9a5130394e4283b22118fa144b"><a href="https://da4kek.github.io/writeups" target="_self" rel="home" aria-current="page">WriteUps</a></h1>
+<h1 style="padding-top:0vw;padding-right:0vw;padding-left:0vw;padding-bottom:0vw;" class="has-link-color wp-block-site-title wp-elements-ac90ae9a5130394e4283b22118fa144b"><a href="https://da4kek.github.io/writeups" target="_self" rel="home">WriteUps</a></h1>
 
 <nav class="is-responsive items-justified-right is-fallback wp-block-navigation is-horizontal is-content-justification-right is-layout-flex wp-container-2 wp-block-navigation-is-layout-flex" aria-label=""><button aria-haspopup="true" aria-label="Open menu" class="wp-block-navigation__responsive-container-open " data-micromodal-trigger="modal-1"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="7.5" width="16" height="1.5"></rect><rect x="4" y="15" width="16" height="1.5"></rect></svg></button>
 			<div class="wp-block-navigation__responsive-container  has-background has-two-background-color" id="modal-1">
@@ -138,7 +145,7 @@ img.emoji {
 							<button aria-label="Close menu" data-micromodal-close class="wp-block-navigation__responsive-container-close"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path></svg></button>
 						<div class="wp-block-navigation__responsive-container-content" id="modal-1-content">
 							<ul class="wp-block-navigation__container is-responsive items-justified-right is-fallback wp-block-navigation">
-<li class="wp-block-navigation-item wp-block-home-link"><a class="wp-block-home-link__content wp-block-navigation-item__content" href="https://da4kek.github.io/writeups" rel="home" aria-current="page">Home</a></li>
+<li class="wp-block-navigation-item wp-block-home-link"><a class="wp-block-home-link__content wp-block-navigation-item__content" href="https://da4kek.github.io/writeups" rel="home">Home</a></li>
 <li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://da4kek.github.io/writeups/about-us/"><span class="wp-block-navigation-item__label">ABOUT US</span></a></li>
 </ul>
 						</div>
@@ -156,45 +163,98 @@ img.emoji {
 	<div id="primary" class="">
 		<main id="main" class="site-main">
 			
-<div class="wp-block-group alignwide is-layout-constrained wp-block-group-is-layout-constrained">
-<div class="wp-block-columns alignwide wp-block-sidebar-on-right is-layout-flex wp-container-12 wp-block-columns-is-layout-flex">
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="padding-right:3%;flex-basis:70%">
-<div class="wp-block-query alignwide is-layout-flow wp-block-query-is-layout-flow">
-<ul class="columns-2 wp-block-post-template is-layout-grid wp-container-7 wp-block-post-template-is-layout-grid"><li class="wp-block-post post-47 post type-post status-publish format-standard hentry category-technical tag-artificial-intelligence">
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained">
+<h1 class="alignwide wp-block-post-title">Introduction to Meta Reinforcement Learning</h1>
 
-<div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow" style="padding-top:0.8em">
 
-<h2 style="padding-top:1rem;padding-bottom:1rem;margin-bottom:calc( 0.5 * var(--wp--custom--gap--vertical) );" class="wp-block-post-title has-moderate-font-size"><a href="https://da4kek.github.io/writeups/2023/09/18/introduction-to-meta-reinforcement-learning/" target="_self">Introduction to Meta Reinforcement Learning</a></h2>
 
-<div style="margin-top:calc( 0.5 * var(--wp--custom--gap--vertical) );margin-bottom:calc( 0.5 * var(--wp--custom--gap--vertical) );" class="wp-block-post-excerpt has-midsmall-font-size">
-<p class="wp-block-post-excerpt__excerpt">What is Meta-learning? Meta-learning, also known as “learning to learn”, is a subfield of machine learning and artificial intelligence that focuses on teaching models or algorithms how to learn more effectively and adapt to new tasks or domains with minimal training data. The primary goal of meta-learning is to develop some sort of algorithm that&hellip;</p>
-<p class="wp-block-post-excerpt__more-text"><a class="wp-block-post-excerpt__more-link" href="https://da4kek.github.io/writeups/2023/09/18/introduction-to-meta-reinforcement-learning/">Read more...</a></p>
+<div class="entry-content wp-block-post-content is-layout-constrained wp-block-post-content-is-layout-constrained">
+<figure class="wp-block-image alignfull size-full"><img decoding="async" fetchpriority="high" width="960" height="364" src="https://da4kek.github.io/writeups/wp-content/uploads/2023/09/GettyImages-1284445593-1.jpg" alt="" class="wp-image-48"></figure>
+
+
+
+<h2 class="wp-block-heading">What is Meta-learning?</h2>
+
+
+
+<p>Meta-learning, also known as “learning to learn”, is a subfield of machine learning and artificial intelligence that focuses on teaching models or algorithms how to learn more effectively and adapt to new tasks or domains with minimal training data.</p>
+
+
+
+<p>The primary goal of meta-learning is to develop some sort of algorithm that can generalize knowledge and skills acquired from one task to something new, unseen tasks or domains. It aims to improve the efficiency of the learning process, reduce the need for large datasets, and enable models to quickly adapt to different situations or states.</p>
+
+
+
+<p>Meta-learning has applications in various fields, including natural language processing, computer vision, robotics, and more. it’s a promising area of research because it addresses the challenge of building more flexible and adaptable AI systems that can learn efficiently from limited data, which is often the case in real-world scenarios.</p>
+
+
+
+<h2 class="wp-block-heading">What is Meta-reinforcement learning?</h2>
+
+
+
+<p>In recent years deep reinforcement learning systems have attained superhuman performance in a number of challenging task domains. However, a major limitation of such applications is their demand for massive amounts of training data as mentioned. What emerges is a system that is trained using one RL algorithm, but whose recurrent dynamics implement a second, quite separate RL procedure. The second learned RL algorithm can differ from the original one in arbitrary ways. Importantly, because it is learned, it is configured to exploit structure in the training domain.</p>
+
+
+
+<p>In short Meta-reinforcement learning or meta-RL is an extension of traditional reinforcement learning that focuses on training agents to quickly adapt to and learn new tasks or environments with minimal prior experience. In meta-RL, an agent learns not just how to perform a specific task but also how to learn more effectively and efficiently across a range of tasks.</p>
+
+
+
+<p>Some key concepts of meta-reinforcement learning are:</p>
+
+
+
+<ol>
+<li> <strong>Meta-training</strong>: There are typically two stages: meta-training and meta-testing, during the meta-training phase, the agent is exposed to a diverse set of tasks. It learns a policy or a set of policies that enable it to adapt quickly when presented with a new task during the meta-testing phase.</li>
+
+
+
+<li> <strong>Meta-objective</strong>: During meta-training, the agent optimizes a meta-objective, which is a higher-level objective that encourages the agent to acquire skills and knowledge that are useful for adaptation.</li>
+
+
+
+<li> <strong>Few-shot learning</strong>: Meta-RL often deals with few-shot learning, where the agent is required to adapt to new tasks with very few interactions or experiences.</li>
+
+
+
+<li> <strong>Adaptation</strong>: The key focus is on the agent’s ability to adapt to new tasks or environments. The adaptation can involve adjusting policy parameters, updating value functions, or making other changes to the agent’s decision-making process.</li>
+</ol>
+
+
+
+<p></p>
+
+
+
+<ol>
+<li>Overall, meta-reinforcement learning is an exciting area of research that aims to enhance the adaptability and generalization capabilities of reinforcement learning agents, enabling them to tackle a wide range of tasks and environments.</li>
+
+
+
+<li>This will be a small article giving an intuition about meta-RL, I’m planning on implementing the methods/algorithms and updating the article later. Stay tuned!</li>
+</ol>
+
+
+
+<p></p>
+
+
+
+<pre class="wp-block-verse">Bottom-up! 
+~Anirudh.</pre>
+
+
+
+<p></p>
 </div>
 
-<div style="font-weight:500;" class="wp-block-post-date has-midsmall-font-size"><time datetime="2023-09-18T10:18:00+00:00"><a href="https://da4kek.github.io/writeups/2023/09/18/introduction-to-meta-reinforcement-learning/">September 18, 2023</a></time></div>
-</div>
 
-</li></ul>
-
-</div>
-</div>
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
 
 
 
-<div class="wp-block-column wp-block-column-sidebar is-layout-flow wp-block-column-is-layout-flow" style="padding-top:0%;padding-right:0%;padding-bottom:0%;padding-left:0%;flex-basis:27%">
-<h2 class="wp-block-heading" style="margin-bottom:20px;padding-top:1rem;text-transform:uppercase">Recent Posts</h2>
-
-
-<ul class="wp-block-latest-posts__list has-dates wp-block-latest-posts">
-<li>
-<a class="wp-block-latest-posts__post-title" href="https://da4kek.github.io/writeups/2023/09/18/introduction-to-meta-reinforcement-learning/">Introduction to Meta Reinforcement Learning</a><time datetime="2023-09-18T10:18:00+00:00" class="wp-block-latest-posts__post-date">September 18, 2023</time>
-</li>
-</ul>
-
-
-<div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
-</div>
-</div>
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
 </div>
 		</main><!-- #main -->
 	</div>
@@ -209,7 +269,7 @@ img.emoji {
         <div class="site-footer">
             
 <div class="wp-block-group tapana-footer is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:2vw;padding-right:4vw;padding-bottom:1vw;padding-left:4vw">
-<div class="wp-block-columns is-layout-flex wp-container-16 wp-block-columns-is-layout-flex">
+<div class="wp-block-columns is-layout-flex wp-container-10 wp-block-columns-is-layout-flex">
 <div class="wp-block-column tapana-radius has-white-color has-text-color has-background is-layout-flow wp-block-column-is-layout-flow" style="background-color:#d72222;padding-top:2vw;padding-right:2vw;padding-bottom:2vw;padding-left:2vw;flex-basis:53.33%">
 <h2 class="wp-block-heading" style="font-size:1.6em;font-style:normal;font-weight:700;text-transform:uppercase">WriteUps</h2>
 
@@ -249,7 +309,7 @@ img.emoji {
         	<div class="martanda-side-left-text-content">Articles</div>
         </div>
             </div>
-    <style id="core-block-supports-inline-css" type="text/css">.wp-elements-ac90ae9a5130394e4283b22118fa144b a{color:var(--wp--preset--color--primary);}.wp-container-2.wp-container-2{gap:1vw;justify-content:flex-end;}.wp-container-3.wp-container-3{flex-wrap:nowrap;justify-content:space-between;}.wp-container-7.wp-container-7{grid-template-columns:repeat(2, minmax(0, 1fr));}.wp-container-12.wp-container-12,.wp-container-16.wp-container-16{flex-wrap:nowrap;}</style>
+    <style id="core-block-supports-inline-css" type="text/css">.wp-elements-ac90ae9a5130394e4283b22118fa144b a{color:var(--wp--preset--color--primary);}.wp-container-2.wp-container-2{gap:1vw;justify-content:flex-end;}.wp-container-3.wp-container-3{flex-wrap:nowrap;justify-content:space-between;}.wp-container-10.wp-container-10{flex-wrap:nowrap;}</style>
 <script type="text/javascript" src="https://da4kek.github.io/writeups/wp-content/themes/martanda/js/back-to-top.min.js?ver=1.0.1" id="martanda-back-to-top-js"></script>
 <script type="text/javascript" src="https://da4kek.github.io/writeups/wp-content/plugins/gutenverse/assets/frontend/react-player/ReactPlayer.standalone.js?ver=1.8.8" id="react-player-dep-js"></script>
 <script type="text/javascript" src="https://da4kek.github.io/writeups/wp-includes/js/dist/vendor/lodash.min.js?ver=4.17.19" id="lodash-js"></script>
