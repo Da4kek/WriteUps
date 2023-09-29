@@ -3,10 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>WriteUps</title>
+	<title>Deep Dive into Game Theory Essentials &#8211; WriteUps</title>
 <meta name="robots" content="max-image-preview:large">
 <link rel="alternate" type="application/rss+xml" title="WriteUps &raquo; Feed" href="https://da4kek.github.io/writeups/feed/">
 <link rel="alternate" type="application/rss+xml" title="WriteUps &raquo; Comments Feed" href="https://da4kek.github.io/writeups/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="WriteUps &raquo; Deep Dive into Game Theory Essentials Comments Feed" href="https://da4kek.github.io/writeups/deep-dive-into-game-theory-essentials/feed/">
 <script type="text/javascript">
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/da4kek.github.io\/writeups\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1"}};
 /*! This file is auto-generated */
@@ -110,17 +111,23 @@ img.emoji {
 <link rel="stylesheet" id="gutenverse-frontend-style-css" href="https://da4kek.github.io/writeups/wp-content/plugins/gutenverse/assets/css/frontend-block.css?ver=1.8.8" type="text/css" media="all">
 <link rel="stylesheet" id="gutenverse-frontend-icons-css" href="https://da4kek.github.io/writeups/wp-content/plugins/gutenverse/assets/css/frontend-icon.css?ver=1.8.8" type="text/css" media="all">
 <link rel="https://api.w.org/" href="https://da4kek.github.io/writeups/wp-json/">
+<link rel="alternate" type="application/json" href="https://da4kek.github.io/writeups/wp-json/wp/v2/posts/165">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://da4kek.github.io/writeups/xmlrpc.php?rsd">
 <meta name="generator" content="WordPress 6.3.1">
+<link rel="canonical" href="https://da4kek.github.io/writeups/deep-dive-into-game-theory-essentials/">
+<link rel="shortlink" href="https://da4kek.github.io/writeups/?p=165">
+<link rel="alternate" type="application/json+oembed" href="https://da4kek.github.io/writeups/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fda4kek.github.io%2Fwriteups%2Fdeep-dive-into-game-theory-essentials%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://da4kek.github.io/writeups/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fda4kek.github.io%2Fwriteups%2Fdeep-dive-into-game-theory-essentials%2F#038;format=xml">
 		<style id="gutenverse-global-css">:root { 
             --guten-screen-xs-max: 767px;
             --guten-screen-sm-min: 768px;
             --guten-screen-sm-max: 1024px;
             --guten-screen-md-min: 1025px; 
         }</style>
-		</head>
+		<link rel="pingback" href="https://da4kek.github.io/writeups/xmlrpc.php">
+</head>
 
-<body itemtype="https://schema.org/Blog" itemscope="itemscope" class="home blog wp-embed-responsive hide-mobile-top-bar martanda-scrollbar martanda-image-cursor ">
+<body itemtype="https://schema.org/Blog" itemscope="itemscope" class="post-template-default single single-post postid-165 single-format-standard wp-embed-responsive hide-mobile-top-bar martanda-scrollbar martanda-image-cursor ">
 	    <div class="martanda-body-padding-content">
     	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
     	<div class="martanda-top-bar-content">
@@ -130,7 +137,7 @@ img.emoji {
 <div class="wp-block-group site-header is-layout-constrained wp-block-group-is-layout-constrained">
 <div class="wp-block-group has-background is-layout-constrained wp-block-group-is-layout-constrained" style="border-radius:10px;background-color:#1c1c1c;padding-top:0.5vw;padding-right:2vw;padding-bottom:0.7vw;padding-left:2vw">
 <div class="wp-block-group alignwide align-stretch is-content-justification-space-between is-nowrap is-layout-flex wp-container-3 wp-block-group-is-layout-flex" style="margin-top:0px;margin-bottom:0px;padding-top:0px;padding-bottom:0">
-<h1 style="padding-top:0vw;padding-right:0vw;padding-left:0vw;padding-bottom:0vw;" class="has-link-color wp-block-site-title wp-elements-ac90ae9a5130394e4283b22118fa144b"><a href="https://da4kek.github.io/writeups" target="_self" rel="home" aria-current="page">WriteUps</a></h1>
+<h1 style="padding-top:0vw;padding-right:0vw;padding-left:0vw;padding-bottom:0vw;" class="has-link-color wp-block-site-title wp-elements-ac90ae9a5130394e4283b22118fa144b"><a href="https://da4kek.github.io/writeups" target="_self" rel="home">WriteUps</a></h1>
 
 <nav class="is-responsive items-justified-right wp-block-navigation is-horizontal is-content-justification-right is-layout-flex wp-container-2 wp-block-navigation-is-layout-flex" aria-label="Header navigation"><button aria-haspopup="true" aria-label="Open menu" class="wp-block-navigation__responsive-container-open " data-micromodal-trigger="modal-1"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M5 5v1.5h14V5H5zm0 7.8h14v-1.5H5v1.5zM5 19h14v-1.5H5V19z"></path></svg></button>
 			<div class="wp-block-navigation__responsive-container  has-background has-two-background-color" id="modal-1">
@@ -139,7 +146,7 @@ img.emoji {
 							<button aria-label="Close menu" data-micromodal-close class="wp-block-navigation__responsive-container-close"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path></svg></button>
 						<div class="wp-block-navigation__responsive-container-content" id="modal-1-content">
 							<ul class="wp-block-navigation__container is-responsive items-justified-right wp-block-navigation">
-<li class="wp-block-navigation-item wp-block-home-link"><a class="wp-block-home-link__content wp-block-navigation-item__content" href="https://da4kek.github.io/writeups" rel="home" aria-current="page">Home</a></li>
+<li class="wp-block-navigation-item wp-block-home-link"><a class="wp-block-home-link__content wp-block-navigation-item__content" href="https://da4kek.github.io/writeups" rel="home">Home</a></li>
 <li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://da4kek.github.io/writeups/about-us/"><span class="wp-block-navigation-item__label">ABOUT US</span></a></li>
 <li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://da4kek.github.io/writeups/team/"><span class="wp-block-navigation-item__label">MEET OUR TEAM</span></a></li>
 </ul>
@@ -158,119 +165,239 @@ img.emoji {
 	<div id="primary" class="">
 		<main id="main" class="site-main">
 			
-<div class="wp-block-group alignwide is-layout-constrained wp-block-group-is-layout-constrained">
-<div class="wp-block-columns alignwide wp-block-sidebar-on-right is-layout-flex wp-container-17 wp-block-columns-is-layout-flex">
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="padding-right:3%;flex-basis:70%">
-<div class="wp-block-query alignwide is-layout-flow wp-block-query-is-layout-flow">
-<ul class="columns-2 wp-block-post-template is-layout-grid wp-container-12 wp-block-post-template-is-layout-grid">
-<li class="wp-block-post post-165 post type-post status-publish format-standard hentry category-theory tag-theories">
-
-<div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow" style="padding-top:0.8em">
-
-<h2 style="padding-top:1rem;padding-bottom:1rem;margin-bottom:calc( 0.5 * var(--wp--custom--gap--vertical) );" class="wp-block-post-title has-moderate-font-size"><a href="https://da4kek.github.io/writeups/deep-dive-into-game-theory-essentials/" target="_self">Deep Dive into Game Theory Essentials</a></h2>
-
-<div style="margin-top:calc( 0.5 * var(--wp--custom--gap--vertical) );margin-bottom:calc( 0.5 * var(--wp--custom--gap--vertical) );" class="wp-block-post-excerpt has-midsmall-font-size">
-<p class="wp-block-post-excerpt__excerpt">Introduction In this article, we dive a little deeper into the examples of game theory and explore the strategies of potential avoidance and their consequences. We also take a look at the concept of solving games and decision-making. Classic Examples of Game Theory Prisoner&#8217;s Dilemma:The Prisoner&#8217;s Dilemma is a classic example in game theory that&hellip;</p>
-<p class="wp-block-post-excerpt__more-text"><a class="wp-block-post-excerpt__more-link" href="https://da4kek.github.io/writeups/deep-dive-into-game-theory-essentials/">Read more...</a></p>
-</div>
-
-<div style="font-weight:500;" class="wp-block-post-date has-midsmall-font-size"><time datetime="2023-09-29T09:59:23+00:00"><a href="https://da4kek.github.io/writeups/deep-dive-into-game-theory-essentials/">September 29, 2023</a></time></div>
-</div>
-
-</li>
-<li class="wp-block-post post-158 post type-post status-publish format-standard hentry category-theory tag-theories">
-
-<div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow" style="padding-top:0.8em">
-
-<h2 style="padding-top:1rem;padding-bottom:1rem;margin-bottom:calc( 0.5 * var(--wp--custom--gap--vertical) );" class="wp-block-post-title has-moderate-font-size"><a href="https://da4kek.github.io/writeups/introduction-to-game-theory/" target="_self">Introduction to Game Theory</a></h2>
-
-<div style="margin-top:calc( 0.5 * var(--wp--custom--gap--vertical) );margin-bottom:calc( 0.5 * var(--wp--custom--gap--vertical) );" class="wp-block-post-excerpt has-midsmall-font-size">
-<p class="wp-block-post-excerpt__excerpt">What is Game Theory? Game theory is a mathematical and strategic framework used to study interactions and decision-making among rational individuals or entities in various situations, often referred to as &#8220;games.&#8221; These &#8220;games&#8221; represent scenarios where the outcome of one participant&#8217;s decision depends on the choices made by others. Game theory analyzes these interactions to&hellip;</p>
-<p class="wp-block-post-excerpt__more-text"><a class="wp-block-post-excerpt__more-link" href="https://da4kek.github.io/writeups/introduction-to-game-theory/">Read more...</a></p>
-</div>
-
-<div style="font-weight:500;" class="wp-block-post-date has-midsmall-font-size"><time datetime="2023-09-29T09:04:59+00:00"><a href="https://da4kek.github.io/writeups/introduction-to-game-theory/">September 29, 2023</a></time></div>
-</div>
-
-</li>
-<li class="wp-block-post post-154 post type-post status-publish format-standard hentry category-theory tag-neuroscience">
-
-<div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow" style="padding-top:0.8em">
-
-<h2 style="padding-top:1rem;padding-bottom:1rem;margin-bottom:calc( 0.5 * var(--wp--custom--gap--vertical) );" class="wp-block-post-title has-moderate-font-size"><a href="https://da4kek.github.io/writeups/a-dive-into-cognitive-psychology/" target="_self">A Dive into Cognitive Psychology</a></h2>
-
-<div style="margin-top:calc( 0.5 * var(--wp--custom--gap--vertical) );margin-bottom:calc( 0.5 * var(--wp--custom--gap--vertical) );" class="wp-block-post-excerpt has-midsmall-font-size">
-<p class="wp-block-post-excerpt__excerpt">History of the evolution Before the evolution of cognitive psychology, the study of psychology was just around the behavior of humans which was reciprocated to the stimulated input that is undergone by a person, which led to an enduring question of the reason for the behavior not knowing the reason for the response of any&hellip;</p>
-<p class="wp-block-post-excerpt__more-text"><a class="wp-block-post-excerpt__more-link" href="https://da4kek.github.io/writeups/a-dive-into-cognitive-psychology/">Read more...</a></p>
-</div>
-
-<div style="font-weight:500;" class="wp-block-post-date has-midsmall-font-size"><time datetime="2023-09-29T08:36:48+00:00"><a href="https://da4kek.github.io/writeups/a-dive-into-cognitive-psychology/">September 29, 2023</a></time></div>
-</div>
-
-</li>
-<li class="wp-block-post post-147 post type-post status-publish format-standard hentry category-theory tag-neuroscience">
-
-<div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow" style="padding-top:0.8em">
-
-<h2 style="padding-top:1rem;padding-bottom:1rem;margin-bottom:calc( 0.5 * var(--wp--custom--gap--vertical) );" class="wp-block-post-title has-moderate-font-size"><a href="https://da4kek.github.io/writeups/introduction-to-neurogenesis/" target="_self">Introduction to Neurogenesis</a></h2>
-
-<div style="margin-top:calc( 0.5 * var(--wp--custom--gap--vertical) );margin-bottom:calc( 0.5 * var(--wp--custom--gap--vertical) );" class="wp-block-post-excerpt has-midsmall-font-size">
-<p class="wp-block-post-excerpt__excerpt">What is Neurogenesis? Neurogenesis is the process by which new neurons are formed in the brain. The development of new neurons continues during adulthood in two regions of the brain. Neurogenesis takes place in the subventricular zone (SVZ) which forms the lining of the lateral ventricles and the subgranular zone which forms part of the&hellip;</p>
-<p class="wp-block-post-excerpt__more-text"><a class="wp-block-post-excerpt__more-link" href="https://da4kek.github.io/writeups/introduction-to-neurogenesis/">Read more...</a></p>
-</div>
-
-<div style="font-weight:500;" class="wp-block-post-date has-midsmall-font-size"><time datetime="2023-09-25T14:01:26+00:00"><a href="https://da4kek.github.io/writeups/introduction-to-neurogenesis/">September 25, 2023</a></time></div>
-</div>
-
-</li>
-<li class="wp-block-post post-47 post type-post status-publish format-standard hentry category-technical tag-artificial-intelligence">
-
-<div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow" style="padding-top:0.8em">
-
-<h2 style="padding-top:1rem;padding-bottom:1rem;margin-bottom:calc( 0.5 * var(--wp--custom--gap--vertical) );" class="wp-block-post-title has-moderate-font-size"><a href="https://da4kek.github.io/writeups/introduction-to-meta-reinforcement-learning/" target="_self">Introduction to Meta Reinforcement Learning</a></h2>
-
-<div style="margin-top:calc( 0.5 * var(--wp--custom--gap--vertical) );margin-bottom:calc( 0.5 * var(--wp--custom--gap--vertical) );" class="wp-block-post-excerpt has-midsmall-font-size">
-<p class="wp-block-post-excerpt__excerpt">What is Meta-learning? Meta-learning, also known as “learning to learn”, is a subfield of machine learning and artificial intelligence that focuses on teaching models or algorithms how to learn more effectively and adapt to new tasks or domains with minimal training data. The primary goal of meta-learning is to develop some sort of algorithm that&hellip;</p>
-<p class="wp-block-post-excerpt__more-text"><a class="wp-block-post-excerpt__more-link" href="https://da4kek.github.io/writeups/introduction-to-meta-reinforcement-learning/">Read more...</a></p>
-</div>
-
-<div style="font-weight:500;" class="wp-block-post-date has-midsmall-font-size"><time datetime="2023-09-18T10:18:00+00:00"><a href="https://da4kek.github.io/writeups/introduction-to-meta-reinforcement-learning/">September 18, 2023</a></time></div>
-</div>
-
-</li>
-</ul>
-
-</div>
-</div>
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained">
+<h1 class="alignwide wp-block-post-title">Deep Dive into Game Theory Essentials</h1>
 
 
 
-<div class="wp-block-column wp-block-column-sidebar is-layout-flow wp-block-column-is-layout-flow" style="padding-top:0%;padding-right:0%;padding-bottom:0%;padding-left:0%;flex-basis:27%">
-<h2 class="wp-block-heading" style="margin-bottom:20px;padding-top:1rem;text-transform:uppercase">Recent Posts</h2>
+<div class="entry-content wp-block-post-content is-layout-constrained wp-block-post-content-is-layout-constrained">
+<figure class="wp-block-image alignfull size-full"><img decoding="async" fetchpriority="high" width="762" height="402" src="https://da4kek.github.io/writeups/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-29-at-14.27.26_3167c3f1.jpg" alt="" class="wp-image-166"></figure>
 
 
-<ul class="wp-block-latest-posts__list has-dates wp-block-latest-posts">
-<li>
-<a class="wp-block-latest-posts__post-title" href="https://da4kek.github.io/writeups/deep-dive-into-game-theory-essentials/">Deep Dive into Game Theory Essentials</a><time datetime="2023-09-29T09:59:23+00:00" class="wp-block-latest-posts__post-date">September 29, 2023</time>
-</li>
-<li>
-<a class="wp-block-latest-posts__post-title" href="https://da4kek.github.io/writeups/introduction-to-game-theory/">Introduction to Game Theory</a><time datetime="2023-09-29T09:04:59+00:00" class="wp-block-latest-posts__post-date">September 29, 2023</time>
-</li>
-<li>
-<a class="wp-block-latest-posts__post-title" href="https://da4kek.github.io/writeups/a-dive-into-cognitive-psychology/">A Dive into Cognitive Psychology</a><time datetime="2023-09-29T08:36:48+00:00" class="wp-block-latest-posts__post-date">September 29, 2023</time>
-</li>
-<li>
-<a class="wp-block-latest-posts__post-title" href="https://da4kek.github.io/writeups/introduction-to-neurogenesis/">Introduction to Neurogenesis</a><time datetime="2023-09-25T14:01:26+00:00" class="wp-block-latest-posts__post-date">September 25, 2023</time>
-</li>
-<li>
-<a class="wp-block-latest-posts__post-title" href="https://da4kek.github.io/writeups/introduction-to-meta-reinforcement-learning/">Introduction to Meta Reinforcement Learning</a><time datetime="2023-09-18T10:18:00+00:00" class="wp-block-latest-posts__post-date">September 18, 2023</time>
-</li>
+
+<p></p>
+
+
+
+<h2 class="wp-block-heading">Introduction</h2>
+
+
+
+<p>In this article, we dive a little deeper into the examples of game theory and explore the strategies of potential avoidance and their consequences. We also take a look at the concept of solving games and decision-making.</p>
+
+
+
+<h2 class="wp-block-heading">Classic Examples of Game Theory</h2>
+
+
+
+<p><strong>Prisoner&#8217;s Dilemma:</strong><br>The Prisoner&#8217;s Dilemma is a classic example in game theory that illustrates a situation where individual rationality leads to a suboptimal outcome for both players. In this scenario, two suspects are arrested, and the police lack sufficient evidence to convict them on the primary charge. However, they have evidence to convict both on a lesser charge. The suspects are placed in separate interrogation rooms and face the following options:</p>
+
+
+
+<ul>
+<li>If both suspects remain silent (cooperate), they will each serve a short sentence for the lesser charge.</li>
+
+
+
+<li>If one suspect cooperates (remains silent) while the other confesses (defects), the one who confesses will go free (no sentence), and the one who remains silent will serve a long sentence.</li>
+
+
+
+<li>If both suspects confess (defect), they will each serve a moderate sentence.</li>
 </ul>
 
 
-<div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
+
+<p>The dilemma arises because each suspect faces the temptation to confess (defect) in the hope of receiving no sentence or a shorter sentence, even though the best overall outcome (for both) would result from both remaining silent (cooperating).</p>
+
+
+
+<p>Strategies and Outcomes:</p>
+
+
+
+<ul>
+<li>
+<em>Cooperate-Cooperate (CC)</em>: If both suspects choose to cooperate by remaining silent, they each serve a short sentence. This is the best collective outcome, but it relies on trust between the suspects.</li>
+
+
+
+<li>
+<em>Defect-Defect (DD):</em> If both suspects confess, they each serve a moderate sentence. This is a worse outcome for both than cooperating but better for an individual if they expect the other to confess.</li>
+
+
+
+<li>
+<em>Cooperate-Defect (CD) or Defect-Cooperate (DC):</em> If one cooperates (remains silent) while the other confesses (defects), the defector goes free while the cooperator serves a long sentence. This outcome highlights the dilemma—cooperating results in a worse individual outcome if you expect the other to defect.</li>
+</ul>
+
+
+
+<p></p>
+
+
+
+<p>The rational choice for each suspect, given the potential outcomes, is to confess (defect). However, this leads to a suboptimal outcome (DD) compared to mutual cooperation (CC). The Prisoner&#8217;s Dilemma serves as a model for understanding situations where individual rationality can lead to collectively undesirable results.</p>
+
+
+
+<p><strong>Chicken Game</strong>:<br></p>
+
+
+
+<p>The Chicken Game, also known as the Hawk-Dove Game, is another classic game theory scenario. It involves two players driving toward each other in cars and must decide whether to swerve (chicken out) or continue driving straight ahead (not swerve). The potential outcomes are as follows:</p>
+
+
+
+<ul>
+<li>If both players swerve, they both avoid a collision, and there are no penalties.</li>
+
+
+
+<li>If one player swerves (chickens out) while the other continues driving straight, the one who swerved is seen as weak or &#8220;chicken,&#8221; and they may face social embarrassment or a minor penalty.</li>
+
+
+
+<li>If both players continue driving straight (neither swerves), they collide, resulting in significant damage or harm to both, with the worst outcome for both.</li>
+</ul>
+
+
+
+<p></p>
+
+
+
+<p>Strategies, Outcomes, and Consequences:<br></p>
+
+
+
+<ul>
+<li>Swerve-Swerve (SS): If both players choose to swerve, they avoid the collision, and there are no significant consequences. This is the safest option for both, but it may lead to social embarrassment.</li>
+
+
+
+<li>Swerve-Not Swerve (SN) or Not Swerve-Swerve (NS): If one player swerves while the other does not, the one who swerved avoids the collision and potential embarrassment, while the one who didn&#8217;t swerve is seen as the &#8220;winner.&#8221; However, this outcome is not as desirable as both players swerving.</li>
+
+
+
+<li>Not Swerve-Not Swerve (NN) If both players choose not to swerve, they collide, leading to the worst outcome for both. This outcome is typically referred to as a &#8220;dead heat&#8221; or &#8220;mutual destruction.&#8221;</li>
+</ul>
+
+
+
+<p></p>
+
+
+
+<p>The rational choice for each player in this game depends on their assessment of the other player&#8217;s likely choice. If they believe the other will swerve, it&#8217;s rational not to swerve (to &#8220;win&#8221;). However, if both players adopt this strategy, it results in the worst outcome (NN). The Chicken Game illustrates the tension between individual incentives and the potential for a disastrous collective outcome when both players prioritize their personal &#8220;bravery.&#8221;</p>
+
+
+
+<p>Another example although not a “classic” one would be the concept of a “truel”. A duel between three people, known as a Truel. Three people point their guns to each other, and, sometimes simultaneously, sometimes taking turns, shoot. A mix of marksmanship, luck, and strategy determines the survival odds of each duelist.</p>
+
+
+
+<h2 class="wp-block-heading">Solving Games and Decision-Making</h2>
+
+
+
+<ul>
+<li>
+<em>Dominant Strategies</em>: A dominant strategy is a strategy that always yields a better outcome for a player, regardless of the strategy chosen by the opponent(s). If a player has a dominant strategy, they will choose it regardless of the circumstances. Dominant strategies simplify decision-making in games.</li>
+
+
+
+<li>
+<em>Mixed Strategies</em>: In some games, players don&#8217;t have dominant strategies. Instead, they use mixed strategies, which involve randomizing their choices based on probabilities. For example, a player might decide to cooperate with a certain probability and defect with another probability in the Prisoner&#8217;s Dilemma. Mixed strategies can introduce unpredictability and uncertainty into games.</li>
+</ul>
+
+
+
+<p></p>
+
+
+
+<h2 class="wp-block-heading">Applications in order to make rational decisions</h2>
+
+
+
+<ul>
+<li>
+<em>Using Dominant Strategies</em>: When analyzing a game, if a dominant strategy exists for a player, it&#8217;s in their rational self-interest to choose it. They can confidently make this choice without considering the opponent&#8217;s strategy.</li>
+
+
+
+<li>
+<em>Using Mixed Strategies</em>: When there are no dominant strategies, players can use mathematical techniques to calculate the best mix of strategies to maximize their expected payoffs. This involves assigning probabilities to each strategy to achieve the desired outcome. For example, in the Chicken Game, a player may decide to swerve with a 60% probability and not swerve with a 40% probability.</li>
+
+
+
+<li>
+<em>Nash Equilibrium</em>: Nash equilibrium is a key solution concept in non-zero-sum games where each player&#8217;s strategy is the best response to the strategies chosen by others. In a Nash equilibrium, no player has an incentive to unilaterally change their strategy. Finding Nash equilibria can help identify stable outcomes in strategic interactions.</li>
+</ul>
+
+
+
+<p></p>
+
+
+
+<p><strong>Limitations and challenges of applying game theory in real-life situations:</strong></p>
+
+
+
+<ul>
+<li>Assumption of Rationality: Game theory often assumes that all players are perfectly rational and have complete information, which may not hold in real-world situations. Human decision-making can be influenced by emotions, imperfect information, and bounded rationality.</li>
+
+
+
+<li>Complexity: Many real-world situations involve a high degree of complexity with numerous players, strategies, and possible outcomes. Analyzing and solving such complex games can be challenging.</li>
+
+
+
+<li>Dynamic Environments: Game theory typically focuses on static games, but real-life situations often involve dynamic interactions and changing strategies over time.</li>
+
+
+
+<li>Cooperation and Trust: In some situations, players may cooperate based on trust or social norms, which may not align with strict rational self-interest. Game theory doesn&#8217;t always account for these elements.</li>
+
+
+
+<li>Ethical Considerations: Game theory is often used to analyze and optimize outcomes, but it doesn&#8217;t inherently address ethical or moral concerns. Decisions based solely on game-theoretic analysis may not always align with societal values.</li>
+
+
+
+<li>Applicability: The applicability of game theory varies across different fields and situations. It may not provide straightforward solutions in all cases, and its use should be complemented with other tools and considerations. </li>
+</ul>
+
+
+
+<p></p>
+
+
+
+<p>Understanding these limitations and challenges is essential when applying game theory to real-life decision-making, as it allows for a more nuanced and balanced approach to strategic analysis.</p>
+
+
+
+<blockquote class="wp-block-quote">
+<p>Lovers of classic cinema, this one’s for you! The accompanying movie for this article is the classic 1950’s film “Rebel without a Cause”. The plot suggests applications of the Chicken Game. (A personal recommendation would be Tarantino’s universally panned Reservoir Dogs. This movie visually represents the “truel” mentioned in the article and it’s the only reason I included it in the first place!</p>
+<cite>Author&#8217;s note</cite>
+</blockquote>
+
+
+
+<pre class="wp-block-verse">Written by:
+~Avanthikaa Srinivasan</pre>
 </div>
-</div>
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
 </div>
 		</main><!-- #main -->
 	</div>
@@ -285,7 +412,7 @@ img.emoji {
         <div class="site-footer">
             
 <div class="wp-block-group tapana-footer is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:2vw;padding-right:4vw;padding-bottom:1vw;padding-left:4vw">
-<div class="wp-block-columns is-layout-flex wp-container-21 wp-block-columns-is-layout-flex">
+<div class="wp-block-columns is-layout-flex wp-container-10 wp-block-columns-is-layout-flex">
 <div class="wp-block-column tapana-radius has-white-color has-text-color has-background is-layout-flow wp-block-column-is-layout-flow" style="background-color:#d72222;padding-top:2vw;padding-right:2vw;padding-bottom:2vw;padding-left:2vw;flex-basis:53.33%">
 <h2 class="wp-block-heading" style="font-size:1.6em;font-style:normal;font-weight:700;text-transform:uppercase">WriteUps</h2>
 
@@ -330,7 +457,7 @@ img.emoji {
         	<div class="martanda-side-left-text-content">Articles</div>
         </div>
             </div>
-    <style id="core-block-supports-inline-css" type="text/css">.wp-elements-ac90ae9a5130394e4283b22118fa144b a{color:var(--wp--preset--color--primary);}.wp-container-2.wp-container-2{gap:1vw;justify-content:flex-end;}.wp-container-3.wp-container-3{flex-wrap:nowrap;justify-content:space-between;}.wp-container-12.wp-container-12{grid-template-columns:repeat(2, minmax(0, 1fr));}.wp-container-17.wp-container-17,.wp-container-21.wp-container-21{flex-wrap:nowrap;}</style>
+    <style id="core-block-supports-inline-css" type="text/css">.wp-elements-ac90ae9a5130394e4283b22118fa144b a{color:var(--wp--preset--color--primary);}.wp-container-2.wp-container-2{gap:1vw;justify-content:flex-end;}.wp-container-3.wp-container-3{flex-wrap:nowrap;justify-content:space-between;}.wp-container-10.wp-container-10{flex-wrap:nowrap;}</style>
 <script type="text/javascript" src="https://da4kek.github.io/writeups/wp-content/themes/martanda/js/back-to-top.min.js?ver=1.0.1" id="martanda-back-to-top-js"></script>
 <script type="text/javascript" src="https://da4kek.github.io/writeups/wp-content/plugins/gutenverse/assets/frontend/react-player/ReactPlayer.standalone.js?ver=1.8.8" id="react-player-dep-js"></script>
 <script type="text/javascript" src="https://da4kek.github.io/writeups/wp-includes/js/dist/vendor/lodash.min.js?ver=4.17.19" id="lodash-js"></script>
@@ -340,9 +467,7 @@ img.emoji {
 <script type="text/javascript" src="https://da4kek.github.io/writeups/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
 <script type="text/javascript" src="https://da4kek.github.io/writeups/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1" id="wp-hooks-js"></script>
 <script type="text/javascript" src="https://da4kek.github.io/writeups/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef" id="wp-i18n-js"></script>
-<script id="wp-i18n-js-after" type="text/javascript">
-wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
-</script>
+<script id="wp-i18n-js-after" type="text/javascript">wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );</script>
 <script type="text/javascript" src="https://da4kek.github.io/writeups/wp-includes/js/dist/url.min.js?ver=8814d23f2d64864d280d" id="wp-url-js"></script>
 <script type="text/javascript" src="https://da4kek.github.io/writeups/wp-includes/js/dist/api-fetch.min.js?ver=0fa4dabf8bf2c7adf21a" id="wp-api-fetch-js"></script>
 <script id="wp-api-fetch-js-after" type="text/javascript">wp.apiFetch.use( wp.apiFetch.createRootURLMiddleware( "https://da4kek.github.io/writeups/wp-json/" ) );
