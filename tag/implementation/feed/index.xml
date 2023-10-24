@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Implementation &#8211; WriteUps</title>
+	<atom:link href="https://da4kek.github.io/writeups/tag/implementation/feed/" rel="self" type="application/rss+xml" />
+	<link>https://da4kek.github.io/writeups</link>
+	<description></description>
+	<lastBuildDate>Tue, 24 Oct 2023 06:20:21 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.3.1</generator>
+	<item>
+		<title>CNM:</title>
+		<link>https://da4kek.github.io/writeups/cnm/</link>
+		
+		<dc:creator><![CDATA[root]]></dc:creator>
+		<pubDate>Tue, 24 Oct 2023 06:18:13 +0000</pubDate>
+				<category><![CDATA[Project]]></category>
+		<category><![CDATA[Implementation]]></category>
+		<guid isPermaLink="false">https://da4kek.github.io/writeups/?p=186</guid>
+
+					<description><![CDATA[CNM is a powerful Python package tailored for computational neuroscience modeling. With its user-friendly design and flexibility, it serves as an invaluable tool for constructing and running simulations of neural networks and other computational models in the realm of neuroscience. It is designed to be a GUI simulator later, letting researchers use and infer various [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>
